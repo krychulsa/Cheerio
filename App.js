@@ -47,6 +47,7 @@ const Item = props => (
     <Text>{props.price}</Text>
     <Text>{props.rating}</Text>
   </TouchableOpacity>
+
   
 );
 export default App;
