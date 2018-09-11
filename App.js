@@ -31,12 +31,9 @@ class App extends Component {
     });
 
   render = () => (
-    <View>
-      <Text>Hello</Text>
-    </View>
-    // <ScrollView>
-    //   {this.state.items.map(item => <Item {...item} key={item.asin}/>)}
-    // </ScrollView>
+    <ScrollView>
+      {this.state.items.map(item => <Item {...item} key={item.asin}/>)}
+    </ScrollView>
   );
 }
 
@@ -47,8 +44,6 @@ const Item = props => (
     <Text>{props.price}</Text>
     <Text>{props.rating}</Text>
   </TouchableOpacity>
-
-  
 );
 export default App;
 
